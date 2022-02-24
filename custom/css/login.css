@@ -1,0 +1,10 @@
+.login {
+    background: url('../../assets/img/background_1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login .painel {
+    max-height: 400px;
+    max-width: 400px;
+}

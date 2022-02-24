@@ -1,0 +1,17 @@
+.left-40 {
+    left: 40px;
+}
+
+.right-40 {
+    right: 40px;
+}
+
+@media screen and (min-width: 991px) {
+    .left-lg-40 {
+        left: 40px;
+    }
+    
+    .right-lg-40 {
+        right: 40px;
+    }
+}

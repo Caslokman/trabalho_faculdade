@@ -1,0 +1,23 @@
+.btn-eff:hover {
+    transform: translate3d(0px, -4px, 0.01px) !important;
+    transition: color 350ms ease, transform 300ms ease, border 300ms ease, background-color 300ms ease, -webkit-transform 300ms ease !important;
+}
+
+
+.btn-no-eff.btn-eff-dark-1:hover,
+.btn-eff.btn-eff-dark-1:hover {
+    background-color: #14142b !important;
+    border-color: #14142b !important;
+    color: #ffffff !important;
+}
+
+.btn-no-eff.btn-eff-grey-1:hover,
+.btn-eff.btn-eff-grey-1:hover {
+    background: #e2e3e9 !important;
+    color: #14142b !important;
+}
+
+.btn-no-eff.btn-eff-yellow-1:hover,
+.btn-eff.btn-eff-yellow-1:hover {
+    border-color: #fedb01 !important;
+}

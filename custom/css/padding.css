@@ -1,0 +1,51 @@
+.py-2-5 {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.py-3-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.px-4-5 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.pt-5rem {
+    padding-top: 5rem;
+}
+
+.py-5rem {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.ps-12-rem {
+    padding-left: 12rem;
+}
+
+.ps-13-rem {
+    padding-left: 13rem;
+}
+
+@media screen and (min-width: 992px) {
+    .ps-lg-12-rem {
+        padding-left: 12rem;
+    }
+    
+    .ps-lg-13-rem {
+        padding-left: 13rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .ps-xl-12-rem {
+        padding-left: 12rem;
+    }
+    
+    .ps-xl-13-rem {
+        padding-left: 13rem;
+    }
+}
