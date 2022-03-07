@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+
+    <link rel="stylesheet" href="../assets/library/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/library/node_modules/aos/dist/aos.css">
+
+    <link rel="stylesheet" href="../custom/css/all.css">
+    <link rel="stylesheet" href="../custom/css/fonts.css">
+    <link rel="stylesheet" href="../custom/css/colors.css">
+    <link rel="stylesheet" href="../custom/css/directions.css">
+    <link rel="stylesheet" href="../custom/css/effecs.css">
+    <link rel="stylesheet" href="../custom/css/padding.css">
+    <link rel="stylesheet" href="../custom/css/painel.css">
+
+    <script type="text/javascript" src="../assets/library/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="../assets/library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/library/node_modules/aos/dist/aos.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/4759e35f69.js"></script>
+</head>
+<body>
+    <section class="painel vh-100">
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 c-white min-vh-100">
+                        <a href="#" class="c-white text-center text-decoration-none d-none d-sm-block w-100 mb-3 py-2 b-bottom-1px">
+                            <span class="fs-5 d-none d-sm-inline">Menu</span>
+                        </a>
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link d-flex align-items-center px-0 c-white">
+                                    <i class="c-orange fs-20 fa-solid fa-house"></i> <span class="ms-2 d-none d-sm-inline">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#exercicios" data-bs-toggle="collapse" class="nav-link px-0 d-none d-sm-flex align-items-center c-white">
+                                    <i class="c-orange fs-20 fa-solid fa-dumbbell"></i> <span class="ms-2 d-none d-sm-inline">Exercicios</span>
+                                </a>
+                                <ul class="collapse nav flex-column ms-1" id="exercicios" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="exercicios.html" class="nav-link px-0 c-white"> 
+                                            <span class="d-none d-sm-flex align-items-center">
+                                                <i class="c-orange fs-20 fa-solid fa-list ms-1 me-2"></i>
+                                                Todos
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="categorias.html" class="nav-link px-0 c-white"> 
+                                            <span class="d-none d-sm-flex align-items-center">
+                                                <i class="c-orange fs-20 fa-solid fa-list ms-1 me-2"></i>
+                                                Categorias
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item d-block d-sm-none">
+                                <a href="exercicios.html" class="nav-link d-flex align-items-center px-0 c-white">
+                                    <i class="c-orange fs-20 fa-solid fa-dumbbell"></i> <span class="ms-2 d-none d-sm-inline">Exercicios</span>
+                                </a>
+                            </li>
+                            <li class="nav-item d-block d-sm-none">
+                                <a href="exercicios.html" class="nav-link d-flex align-items-center px-0 c-white">
+                                    <i class="c-orange fs-20 fa-solid fa-list"></i> <span class="ms-2 d-none d-sm-inline">Categorias</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="dropdown pb-4">
+                            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                                <span class="d-none d-sm-inline mx-1">Usuário</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                                <li><a class="dropdown-item" href="#">Configurações</a></li>
+                                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../index.html">Deslogar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="fs-28 fw-bold c-white bg-brown text-uppercase py-2 px-4">
+                        Dashboard
+                    </div>
+                    <div class="position-relative">
+                        <div class="pt-3 px-3">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card w-100 br-10 mb-3 text-decoration-none c-black c-pointer fw-400" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        <div class="title d-flex justify-content-between py-1 px-2">
+                                            <div class="username">
+                                                <i class="fa-solid fa-user bg-light-dark br-25 p-5px"></i> <span class="fs-16">Usuário</span>
+                                            </div>
+                                            <div class="onclock d-flex align-items-center">
+                                                <i class="fa-solid fa-clock c-white bg-black brp-50 p-3px me-1"></i> <span class="fs-16">12:10</span>
+                                            </div>
+                                        </div>
+                                        <img src="../assets/img/background_1.jpg" class="card-img-top brp-0" alt="imagem">
+                                        <div class="card-body p-2">
+                                            <h5 class="card-title bg-light-dark-2 text-uppercase p-2">SERIE HIPERTROFIA Y</h5>
+                                            <div class="card-text fs-14">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                In faucibus, tellus a tincidunt lacinia, dolor dui ultrices dolor, 
+                                                et efficitur nisi magna a libero.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card w-100 br-10 mb-3 text-decoration-none c-black c-pointer fw-400" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        <div class="title d-flex justify-content-between py-1 px-2">
+                                            <div class="username">
+                                                <i class="fa-solid fa-user bg-light-dark br-25 p-5px"></i> <span class="fs-16">Usuário</span>
+                                            </div>
+                                            <div class="onclock d-flex align-items-center">
+                                                <i class="fa-solid fa-clock c-white bg-black brp-50 p-3px me-1"></i> <span class="fs-16">12:10</span>
+                                            </div>
+                                        </div>
+                                        <img src="../assets/img/background_1.jpg" class="card-img-top brp-0" alt="imagem">
+                                        <div class="card-body p-2">
+                                            <h5 class="card-title bg-light-dark-2 text-uppercase p-2">SERIE HIPERTROFIA Y</h5>
+                                            <div class="card-text fs-14">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                In faucibus, tellus a tincidunt lacinia, dolor dui ultrices dolor, 
+                                                et efficitur nisi magna a libero.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card w-100 br-10 mb-3 text-decoration-none c-black c-pointer fw-400" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        <div class="title d-flex justify-content-between py-1 px-2">
+                                            <div class="username">
+                                                <i class="fa-solid fa-user bg-light-dark br-25 p-5px"></i> <span class="fs-16">Usuário</span>
+                                            </div>
+                                            <div class="onclock d-flex align-items-center">
+                                                <i class="fa-solid fa-clock c-white bg-black brp-50 p-3px me-1"></i> <span class="fs-16">12:10</span>
+                                            </div>
+                                        </div>
+                                        <img src="../assets/img/background_1.jpg" class="card-img-top brp-0" alt="imagem">
+                                        <div class="card-body p-2">
+                                            <h5 class="card-title bg-light-dark-2 text-uppercase p-2">SERIE HIPERTROFIA Y</h5>
+                                            <div class="card-text fs-14">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                In faucibus, tellus a tincidunt lacinia, dolor dui ultrices dolor, 
+                                                et efficitur nisi magna a libero.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card w-100 br-10 mb-3 text-decoration-none c-black c-pointer fw-400" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        <div class="title d-flex justify-content-between py-1 px-2">
+                                            <div class="username">
+                                                <i class="fa-solid fa-user bg-light-dark br-25 p-5px"></i> <span class="fs-16">Usuário</span>
+                                            </div>
+                                            <div class="onclock d-flex align-items-center">
+                                                <i class="fa-solid fa-clock c-white bg-black brp-50 p-3px me-1"></i> <span class="fs-16">12:10</span>
+                                            </div>
+                                        </div>
+                                        <img src="../assets/img/background_1.jpg" class="card-img-top brp-0" alt="imagem">
+                                        <div class="card-body p-2">
+                                            <h5 class="card-title bg-light-dark-2 text-uppercase p-2">SERIE HIPERTROFIA Y</h5>
+                                            <div class="card-text fs-14">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                In faucibus, tellus a tincidunt lacinia, dolor dui ultrices dolor, 
+                                                et efficitur nisi magna a libero.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card w-100 br-10 mb-3 text-decoration-none c-black c-pointer fw-400" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        <div class="title d-flex justify-content-between py-1 px-2">
+                                            <div class="username">
+                                                <i class="fa-solid fa-user bg-light-dark br-25 p-5px"></i> <span class="fs-16">Usuário</span>
+                                            </div>
+                                            <div class="onclock d-flex align-items-center">
+                                                <i class="fa-solid fa-clock c-white bg-black brp-50 p-3px me-1"></i> <span class="fs-16">12:10</span>
+                                            </div>
+                                        </div>
+                                        <img src="../assets/img/background_1.jpg" class="card-img-top brp-0" alt="imagem">
+                                        <div class="card-body p-2">
+                                            <h5 class="card-title bg-light-dark-2 text-uppercase p-2">SERIE HIPERTROFIA Y</h5>
+                                            <div class="card-text fs-14">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                In faucibus, tellus a tincidunt lacinia, dolor dui ultrices dolor, 
+                                                et efficitur nisi magna a libero.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card w-100 br-10 mb-3 text-decoration-none c-black c-pointer fw-400" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        <div class="title d-flex justify-content-between py-1 px-2">
+                                            <div class="username">
+                                                <i class="fa-solid fa-user bg-light-dark br-25 p-5px"></i> <span class="fs-16">Usuário</span>
+                                            </div>
+                                            <div class="onclock d-flex align-items-center">
+                                                <i class="fa-solid fa-clock c-white bg-black brp-50 p-3px me-1"></i> <span class="fs-16">12:10</span>
+                                            </div>
+                                        </div>
+                                        <img src="../assets/img/background_1.jpg" class="card-img-top brp-0" alt="imagem">
+                                        <div class="card-body p-2">
+                                            <h5 class="card-title bg-light-dark-2 text-uppercase p-2">SERIE HIPERTROFIA Y</h5>
+                                            <div class="card-text fs-14">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                In faucibus, tellus a tincidunt lacinia, dolor dui ultrices dolor, 
+                                                et efficitur nisi magna a libero.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card w-100 br-10 mb-3 text-decoration-none c-black c-pointer fw-400" data-bs-toggle="modal" data-bs-target="#cardModal">
+                                        <div class="title d-flex justify-content-between py-1 px-2">
+                                            <div class="username">
+                                                <i class="fa-solid fa-user bg-light-dark br-25 p-5px"></i> <span class="fs-16">Usuário</span>
+                                            </div>
+                                            <div class="onclock d-flex align-items-center">
+                                                <i class="fa-solid fa-clock c-white bg-black brp-50 p-3px me-1"></i> <span class="fs-16">12:10</span>
+                                            </div>
+                                        </div>
+                                        <img src="../assets/img/background_1.jpg" class="card-img-top brp-0" alt="imagem">
+                                        <div class="card-body p-2">
+                                            <h5 class="card-title bg-light-dark-2 text-uppercase p-2">SERIE HIPERTROFIA Y</h5>
+                                            <div class="card-text fs-14">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                In faucibus, tellus a tincidunt lacinia, dolor dui ultrices dolor, 
+                                                et efficitur nisi magna a libero.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="cardModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase" id="cardModalLabel">Informações</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../assets/img/background_1.jpg" class="card-img-top brp-0" alt="imagem">
+                    <div>
+                        <h5 class="bg-light-dark-2 text-uppercase p-2">SERIE HIPERTROFIA Y</h5>
+                        <div class="fs-20">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            In faucibus, tellus a tincidunt lacinia, dolor dui ultrices dolor, 
+                            et efficitur nisi magna a libero.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

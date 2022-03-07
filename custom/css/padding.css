@@ -1,3 +1,23 @@
+.p-1px {
+    padding: 1px;
+}
+
+.p-2px {
+    padding: 2px;
+}
+
+.p-3px {
+    padding: 3px;
+}
+
+.p-4px {
+    padding: 4px;
+}
+
+.p-5px {
+    padding: 5px;
+}
+
 .py-2-5 {
     padding-top: .75rem;
     padding-bottom: .75rem;
